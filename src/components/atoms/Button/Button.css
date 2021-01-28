@@ -1,0 +1,33 @@
+:root{
+    --primary-color: #9879e9;
+    --white: #fff;
+    --white-lilac:#e8e8e8;
+    --east-bay: #455970;
+}
+
+.button {
+   
+    border : 1px solid transparent;
+    padding : 10px 85px;
+    border-radius: 30px;
+    box-shadow : 0px 4px 5px var(--white-lilac);
+    cursor : pointer;
+}
+
+.button-primary {
+    background : var(--primary-color);
+    color : var(--white);
+    
+}
+.button:hover {
+    filter : brightness(1.1);
+    
+}
+.button:active {
+    filter : brightness(0.9);
+}
+.button-secondary{
+    background : transparent;
+    color : var(--primary-color);
+    border : 1px solid var(--primary-color);
+}
