@@ -1,6 +1,10 @@
 const { choices, decisions } = require('../tokens');
 const fs = require('fs');
 
+const toKebabCase =  (string) => {
+  return string.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, '$1-$2').toLowerCase();
+};
+
 const transformTokens = (parentKey, object) => {
   const objectKeys = Object.keys(object);
 
@@ -15,7 +19,7 @@ const transformTokens = (parentKey, object) => {
     
       return `
       ${tokensTransformed}
-      ${transformTokens(`${customProperty}`,value)}`
+      ${transformTokens(`${toKebabCase(customProperty)}`,value)}`
     }
 
     const customProperty = parentKey !== null 
@@ -23,7 +27,7 @@ const transformTokens = (parentKey, object) => {
     : `${parentKey}-${objectKey}`
     
     return `${tokensTransformed}
-    ${customProperty}: ${value};`
+    ${toKebabCase(customProperty)}: ${value};`
   },"");
 
 };
