@@ -5,42 +5,41 @@ const transformTokens = (parentKey, object) => {
   const objectKeys = Object.keys(object);
 
   return objectKeys.reduce((tokensTransformed, objectKey) =>{
+
     const value = object[objectKey];
   
     if (typeof value === 'object') {
-      const customProperty = parentKey 
+      const customProperty = parentKey !== null 
       ? `${parentKey}-${objectKey}` 
       : `${objectKey}`
+    
       return `
-      ${tokensTransformed} 
+      ${tokensTransformed}
       ${transformTokens(`${customProperty}`,value)}`
     }
 
-    const customProperty = parentKey ? `--${parentKey}-${objectKey}` : `${parentKey}-${objectKey}`
-    return `
-    ${tokensTransformed}
-    ${customProperty}: ${value}`
+    const customProperty = parentKey !== null 
+    ? `--${parentKey}-${objectKey}` 
+    : `${parentKey}-${objectKey}`
+    
+    return `${tokensTransformed}
+    ${customProperty}: ${value};`
   },"");
 
 };
-// const buildCustomProperties = () => {
-  const choicesKeys = Object.keys(choices);
-  const choicesStr = transformTokens(null,choices);
-  // const choicesCustomProperties = choicesKeys.reduce((prev, curr) => {
-  //   choices[curr];
-  // }, '');
-// };
-const customProperties = choicesStr
 
-const data = `
-:root{
-   ${customProperties}
+const buildCustomProperties = () => {
+  const customProperties = `${transformTokens(null,choices)}${transformTokens(null,decisions)}`;
+
+  const data = [":root{",customProperties.trim(),"}"].join(`\n`);
+  
+  fs.writeFile('./tokens.css', data, 'utf8', (error) => {
+    if (error) {
+      return console.error(error);
+    } else {
+    }
+  });
 }
-`;
 
-fs.writeFile('./tokens.css', data, 'utf8', (error) => {
-  if (error) {
-    return console.error(error);
-  } else {
-  }
-});
+
+buildCustomProperties();
