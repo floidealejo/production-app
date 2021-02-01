@@ -8,7 +8,7 @@ const Button = ({type,children}) =><button className={clasaNames("button",{
 
 Button.propTypes={
     children: PropTypes.node.isRequired,
-    type: PropTypes.oneOf(["primary","secondary"])
+    type: PropTypes.oneOf(["primary","secondary","tertiary"])
 };
 
 Button.defaultProps = {

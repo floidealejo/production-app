@@ -1,6 +1,8 @@
-:root{
-    --primary-color: #9879e9;
-    --white: #fff;
-    --white-lilac:#e8e8e8;
-    --east-bay: #455970;
+html{
+    font-size:var(--font-size-base);
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
