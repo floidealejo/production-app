@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../../../atoms/Heading/Heading';
+import Heading from '../../atoms/Heading/Heading';
 export default {
     title: 'Atoms/Heading',
     component : Heading
