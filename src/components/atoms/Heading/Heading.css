@@ -1,0 +1,20 @@
+.heading{
+    line-height:1.25;
+}
+.color-primary{
+    color: var(--primary-color);
+}
+.color-default{
+    color: var(--east-bay);
+}
+.size-md{
+    font-size:21px;
+}
+
+.size-sm{
+    font-size:18px;
+    
+}
+.size-xs{
+    font-size:16px;
+}
