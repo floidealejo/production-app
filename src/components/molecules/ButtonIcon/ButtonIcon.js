@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from "prop-types"
 import Button from "../../atoms/Button"
-import Icon from "../../atoms/Icon"
+import Icon from "../../atoms/IconComponent"
 const ButtonIcon = ({children,type,icon}) => {
     return (
         <>
-            <Button type={type}>
+            <Button type={type} isBlock={false}>
                 <span style={{marginRight: 10}}>{children}</span> 
                 <Icon type={icon}/>
             </Button>

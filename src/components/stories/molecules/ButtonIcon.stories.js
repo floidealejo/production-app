@@ -7,4 +7,4 @@ export default {
 };
 
 
-export const Default = () => <ButtonIcon icon="left-arrow">Button primary</ButtonIcon>
+export const Default = () => <ButtonIcon icon="right-arrow">Siguiente</ButtonIcon>
