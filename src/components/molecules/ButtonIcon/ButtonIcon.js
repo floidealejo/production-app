@@ -6,7 +6,7 @@ const ButtonIcon = ({children,type,icon}) => {
     return (
         <>
             <Button type={type}>
-                <span style={{marginRight: 10}}>{children}</span> 
+                <span style={{marginRight: 11}}>{children}</span> 
                 <Icon type={icon}/>
             </Button>
         </>
