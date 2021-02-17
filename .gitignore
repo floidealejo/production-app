@@ -10,7 +10,7 @@
 
 # KDE directory preferences
 .directory
-
+!atoms/Icon
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
