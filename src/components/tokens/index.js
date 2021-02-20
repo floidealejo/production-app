@@ -125,24 +125,24 @@ const choices = {
   },
   spacing: {
     px: '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '20': '5rem',
-    '24': '6rem',
-    '32': '8rem',
-    '40': '10rem',
-    '48': '12rem',
-    '56': '14rem',
-    '64': '16rem',
+    0: '0',
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '0.75rem',
+    4: '1rem',
+    5: '1.25rem',
+    6: '1.5rem',
+    8: '2rem',
+    10: '2.5rem',
+    12: '3rem',
+    16: '4rem',
+    20: '5rem',
+    24: '6rem',
+    32: '8rem',
+    40: '10rem',
+    48: '12rem',
+    56: '14rem',
+    64: '16rem',
   },
   screens: {
     xs: '420px',
@@ -225,20 +225,20 @@ const choices = {
       }
     },
   minHeight: {
-    '0': '0',
+    0: '0',
     full: '100%',
     screen: '100vh',
   },
   minWidth: {
-    '0': '0',
+    0: '0',
     full: '100%',
   },
   opacity: {
-    '0': '0',
-    '25': '0.25',
-    '50': '0.5',
-    '75': '0.75',
-    '100': '1',
+    0: '0',
+    25: '0.25',
+    50: '0.5',
+    75: '0.75',
+    100: '1',
   },
   borderRadius: {
     none: '0',
@@ -249,19 +249,19 @@ const choices = {
   },
   zIndex: {
     auto: 'auto',
-    '0': '0',
-    '10': '10',
-    '20': '20',
-    '30': '30',
-    '40': '40',
-    '50': '50',
+    0: '0',
+    10: '10',
+    20: '20',
+    30: '30',
+    40: '40',
+    50: '50',
   },
-};
+}
 
 const decisions = {
   colors: {
     primary: choices.colors.brand.mediumPurple,
   },
-};
+}
 
-module.exports = { decisions, choices };
+module.exports = { decisions, choices }
