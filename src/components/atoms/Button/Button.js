@@ -6,7 +6,7 @@ const Button = ({ type, children, isBlock }) => (
   <button
     className={clasaNames('button', {
       [`button-${type}`]: type,
-      'is-block': isBlock,
+      "is-block": isBlock,
     })}
   >
     {children}
