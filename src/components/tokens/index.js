@@ -256,12 +256,12 @@ const choices = {
     40: '40',
     50: '50',
   },
-}
+};
 
 const decisions = {
   colors: {
     primary: choices.colors.brand.mediumPurple,
   },
-}
+};
 
-module.exports = { decisions, choices }
+module.exports = { decisions, choices };
