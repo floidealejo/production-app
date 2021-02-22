@@ -249,7 +249,7 @@ const choices = {
 		none: '0',
 		sm: '0.125rem',
 		md: '0.25rem',
-		lg: '0.5rem',
+		lg: '30px',
 		full: '9999px',
 	},
 	zIndex: {
@@ -269,6 +269,7 @@ const decisions = {
 		primaryHighlight: choices.colors.brand.blueMoon,
 		secondary: choices.colors.brand.mandy,
 		fontBase: choices.colors.brand.eastBay,
+		fontHighlight: choices.colors.brand.loblolly,
 		fontMuted: choices.colors.brand.regentGray,
 	},
 	background: {
