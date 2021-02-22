@@ -1,44 +1,42 @@
-
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border : 1px var(--colors-transparent);
-    padding : 10px 20px;
-    border-radius: 30px;
-    box-shadow : 0px 4px 5px var(--colors-brand-white-lilac);
-    cursor : pointer;
-    transition : all 0.5s ease;
-    font-size : var(--font-size-2xl);
-    max-width: 300px;
-    min-width: max-content;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px var(--colors-transparent);
+	padding: 10px 20px;
+	border-radius: 30px;
+	box-shadow: 0px 4px 5px var(--colors-brand-white-lilac);
+	cursor: pointer;
+	transition: all 0.5s ease;
+	font-size: var(--font-size-2xl);
+	max-width: 300px;
+	min-width: max-content;
 }
 
-.is-block{
-    width: 100%;
+.is-block {
+	width: 100%;
 }
 .button-primary {
-    background : var(--colors-brand-medium-purple);
-    color : var(--colors-white);
-    
+	background: var(--colors-primary);
+	color: var(--colors-white);
 }
+
 .button:hover {
-    filter : brightness(1.1);
-    
+	filter: brightness(1.1);
 }
 .button:active {
-    filter : brightness(0.9);
+	filter: brightness(0.9);
 }
-.button-secondary{
-    background : transparent;
-    color : var(--colors-brand-medium-purple);
-    border : 1px solid var(--colors-brand-medium-purple);
+.button-secondary {
+	background: transparent;
+	color: var(--colors-brand-medium-purple);
+	border: 1px solid var(--colors-brand-medium-purple);
 }
-.button-tertiary{
-    background : transparent;
-    color : var(--colors-brand-medium-purple);
-    box-shadow : var(--shadows-none);
-    border-radius: var(--border-radius-none);
-    padding : 0;
-    border-bottom: 1px solid var(--colors-brand-medium-purple);
+.button-tertiary {
+	background: transparent;
+	color: var(--colors-brand-medium-purple);
+	box-shadow: var(--shadows-none);
+	border-radius: var(--border-radius-none);
+	padding: 0;
+	border-bottom: 1px solid var(--colors-brand-medium-purple);
 }
