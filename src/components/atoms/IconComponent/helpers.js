@@ -1,8 +1,9 @@
 const ICONS_ASSETS_PATH = '/icons/';
 
 const iconMap = {
-  'right-arrow': 'right-arrow',
-  home: 'home-outline', //FIXME: Add
+	arrowRight: 'arrow-right',
+	home: 'home-outline', //FIXME: Add
+	angleDown: 'angle-down',
 };
 
 export const mapType = (type) => `${ICONS_ASSETS_PATH}/${iconMap[type]}.svg`;
