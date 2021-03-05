@@ -12,11 +12,13 @@ const Picture = ({ width, src }) => {
 };
 
 Picture.propTypes = {
-	width: propTypes.oneOfType[(propTypes.number, propTypes.string)].isRequired,
+	width: propTypes.oneOfType([propTypes.number, propTypes.string]).isRequired,
 	src: propTypes.string.isRequired,
 };
+
 Picture.defaultProps = {
 	width: 'text' || 'number',
 	src: 'text',
 };
+
 export default Picture;
