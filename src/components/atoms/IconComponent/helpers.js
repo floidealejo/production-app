@@ -7,7 +7,7 @@ const iconMap = {
 };
 const iconSize = {
 	sm: 16,
-	md: 20,
+	md: 26,
 	lg: 30,
 	xl: 40,
 };
